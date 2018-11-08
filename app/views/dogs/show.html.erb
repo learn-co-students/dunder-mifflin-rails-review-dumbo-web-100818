@@ -1,0 +1,9 @@
+<h2>Name: <%= @dog.name %></h2>
+<h2>Breed: <%= @dog.breed %></h2>
+<h2>Age: <%= @dog.age %></h2>
+<h1>Employees</h1>
+<% @dog.employees.each do |e| %>
+<h2><%= e.first_name %> <%= e.last_name %></h2>
+<% end %>
+<%= link_to "Back", dogs_path %>
+<%= link_to "Delete", @dog, method: :delete %>

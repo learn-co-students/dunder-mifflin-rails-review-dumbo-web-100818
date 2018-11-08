@@ -1,0 +1,4 @@
+<h1>Hi, I am <%=@employee.to_s  %></h1>
+<h2> <%= @employee.employee_details %></h2>
+<%= link_to "Back", employees_path %>
+<%= link_to "Delete", @employee , method: :delete %>
