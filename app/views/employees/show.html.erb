@@ -1,0 +1,8 @@
+<ul>
+<li>Name: <%= @employee.full_name%></li>
+<li>Alias: <%= @employee.alias %></li>
+<li>Title: <%= @employee.title %></li>
+<li>Office: <%= @employee.office %></li>
+<li>Dog: <%= link_to @employee.dog.name, @employee.dog %></li>
+<img src= <%= @employee.img_url%>>
+</ul>
