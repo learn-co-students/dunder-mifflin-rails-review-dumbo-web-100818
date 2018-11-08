@@ -1,0 +1,14 @@
+<h1> Employee </h1>
+
+<%= @employee.first_name %>
+<%= @employee.last_name %>
+<%= @employee.alias %>
+<%= @employee.title %>
+<%= @employee.office %>
+<%= image_tag @employee.img_url %>
+
+<%= link_to "Edit", edit_employee_path %>
+
+<%= form_for @employee, method: :delete do |f| %>
+<%= f.submit "delete" %>
+<% end %>
