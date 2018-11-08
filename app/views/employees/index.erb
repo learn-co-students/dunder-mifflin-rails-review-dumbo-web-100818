@@ -1,0 +1,6 @@
+<h1> Employees about to be fired </h1>
+<ul>
+<% @employees.each do |employee| %>
+  <l1><%=link_to employee.first_name, employee  %> </l1> <br>
+<% end  %>
+</ul>
